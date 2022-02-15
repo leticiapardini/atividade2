@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 2</title>
+</head>
+<script>
+    function peso_notas(){
+        let peso_nota1 = parseInt(prompt("Qual o peso da primeira prova"));
+        let peso_nota2 = parseInt(prompt("Qual o peso da segunda prova"));
+        return [peso_nota1,peso_nota2];
+    }
+
+    function matricula_notas (){
+        let matricula = parseInt(prompt("Digite o numero da matricula do aluno"));
+        let nota1 = parseFloat(prompt("Digite a nota da primeira prova"));
+        let nota2 = parseFloat(prompt("Digite a nota da segunda prova"));
+        return[matricula,nota1,nota2];
+
+
+    }
+
+    function calculo_media_ponderada(nota1,nota2,peso_nota1,peso_nota2){
+        return ((peso_nota1*nota1)+ (peso_nota2*nota2))/(peso_nota1+peso_nota2);
+    }
+
+    function exercicio2 (){
+        let [saida_peso1, saida_peso2] = peso_notas();
+        let [saida_matricula, saida_nota1, saida_nota2] = matricula_notas();
+        let media_ponderada = calculo_media_ponderada(saida_nota1,saida_nota2,saida_peso1,saida_peso2);
+        alert("A matricula desse aluno é:" + saida_matricula  + "\n A média do aluno é:" + media_ponderada);
+        
+    }
+
+    exercicio2();
+</script>
+<body>
+    
+</body>
+</html>

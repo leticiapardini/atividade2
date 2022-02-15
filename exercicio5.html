@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 5</title>
+</head>
+
+<script>
+    function gasto(){
+        let gasto_conta = parseFloat(prompt("Digite o valor do consumo"));
+        return gasto_conta;
+    }
+
+    function total_conta(gasto_conta){
+        let gasto_total = (gasto_conta * 1.1);
+        return gasto_total;
+    }
+
+    function conta (){
+        let conta = gasto();
+        let conta_total = total_conta(conta);
+        alert("o valor da conta total é:" + conta_total)
+        
+    }
+    conta();
+
+</script>
+<body>
+    
+</body>
+</html>

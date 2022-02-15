@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio1</title>
+</head>
+
+<script>
+
+    function calcula_media(primeiro_numero,segundo_numero){
+        return ((primeiro_numero + segundo_numero)/2);
+    }
+    function calcula_produto(primeiro_numero,segundo_numero){
+        return (primeiro_numero*segundo_numero);
+    }
+
+    function exercio1(){
+        let primeiro_numero = parseInt(prompt("Digite o primeiro numero"));
+        let segundo_numero = parseInt(prompt("Digite o segundo numero"));
+        let media = calcula_media(primeiro_numero, segundo_numero);
+        let produto = calcula_produto(primeiro_numero,segundo_numero);
+
+        alert("A média dos numeros é:" + media);
+        alert("O calculo do produto é:" + produto); 
+    }
+  
+    exercio1();
+
+
+
+
+
+    
+</script>
+<body>
+    
+</body>
+</html>

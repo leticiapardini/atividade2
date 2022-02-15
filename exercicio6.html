@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 6</title>
+</head>
+
+<script>
+    function salario_bruto() {
+        const salario = parseFloat(prompt("Digite o valor do seu salário bruto"));
+        return salario;
+    }
+
+    function desconto_inss(salario){
+        const imposto_inss = (salario * 0.1);
+        return imposto_inss;
+
+    }
+
+    function desconto_fgts(salario){
+        const imposto_fgts = (salario * 0.08);
+        return imposto_fgts;
+    }
+
+    function desconto_plano() {
+        const plano_saude = parseInt(100);
+        return plano_saude;
+    }
+
+    function exercicio5 (){
+        const salariobruto = salario_bruto();
+        const fgts = desconto_fgts(salariobruto);
+        const inss = desconto_inss(salariobruto);
+        const planosaude = desconto_plano();
+        const totaldescontos = fgts + inss +planosaude;
+        alert("O total de descontos do seu salário é:" + totaldescontos);
+    }
+
+    exercicio5();
+</script>
+<body>
+    
+</body>
+</html>
